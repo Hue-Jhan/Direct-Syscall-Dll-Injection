@@ -1,9 +1,9 @@
 # Direct Syscall DLL Injection
+<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=300>
 
+Dll injector in a remote process using direct system calls resolved dynamically from ntdll.dll, the Dll uses Syscalls to inject encrypted shellcode into the same process, undetected by Windows Defender and Bitdefender. 
 
-<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=200>
-
-Dll injector in a remote process using direct system calls resolved dynamically from ntdll.dll, the Dll uses Syscalls to inject encrypted shellcode into the same process, undetected by Windows Defender and Bitdefender. This code is for educational purposes only, do not use it for any malicious or unauthorized activity.
+This code is for educational purposes only, do not use it for any malicious or unauthorized activity.
 
 
 # 💻 Code
@@ -61,9 +61,9 @@ But AVs look for certain patterns like creating a thread right after execution, 
 
 Here's the DLL, the raw one and the one obfuscated by inserting ntdll metadata into it.
 
-<img src=media/dirsyscall-dll.png align="left" width=200>
+<img src=media/dirsyscall-dll.png align="left" width=300>
 
-<img src=media/dirsyscall-dll-reshacked.png align="left" width=200>
+<img src=media/dirsyscall-dll-reshacked.png align="left" width=300>
 
 Here's the injector, the raw one, the one obfuscated by inserting vs_community metadata into it, and the MSI wrapped version.
 
@@ -71,8 +71,8 @@ You can obfuscate it even more using tools like soggoth, or by turning it into a
 
 The raw one gets more detection than the classic process injection because it extracts the dll and writes it on disk, in the future i will try to inject it directly into the target process with a technique known as manual mapping.
 
-<img src=media/dirsyscall-dll-inj.png align="left" width=200>
+<img src=media/dirsyscall-dll-inj.png align="left" width=300>
 
-<img src=media/dirsyscall-dll-inj-reshacked.png align="left" width=200>
+<img src=media/dirsyscall-dll-inj-reshacked.png align="left" width=300>
 
-<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=200>
+<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=300>
