@@ -1,5 +1,5 @@
 # Direct Syscall DLL Injection
-<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=300>
+<img src=media/dirsyscall-dll-inj-reshacked-msi.png align="left" width=350>
 
 Dll injector in a remote process using direct system calls resolved dynamically from ntdll.dll, the Dll uses Syscalls to inject encrypted shellcode into the same process, undetected by Windows Defender and Bitdefender. 
 
